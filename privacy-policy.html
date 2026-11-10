@@ -4,54 +4,65 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy - Smart Text Expander</title>
-  <link rel="stylesheet" href="common.css">
+
   <link rel="stylesheet" href="privacy.css">
 </head>
 <body>
-  <div class="page">
-    <header>
-      <div class="brand"><img class="logo" src="icons/icon48.png" alt="">Smart Text Expander</div>
-      <a class="back" href="options.html#privacy">Back to settings</a>
-    </header>
-    <article>
-      <h1>Privacy Policy</h1>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <img src="icons/icon48.png" alt="Smart Text Expander Logo">
+        <div>
+          <h1>Privacy Policy</h1>
+          <p>Smart Text Expander</p>
+        </div>
+      </div>
+
       <p class="updated">Last updated: November 10, 2026</p>
 
-      <h2>Summary</h2>
-      <p>Smart Text Expander is free. It stores your snippets on your own device. It does not collect, transmit, sell or share your data, and it contains no analytics, advertising or tracking.</p>
+      <section>
+        <h2>Summary</h2>
+        <p>
+          Smart Text Expander stores your snippets locally on your device.
+          No data is collected, transmitted, sold, shared, tracked, or analyzed.
+        </p>
+      </section>
 
-      <h2>What the extension stores</h2>
-      <p>Saved in your browser with <code>chrome.storage.local</code>, on your device only:</p>
-      <ul>
-        <li>Your snippets (name, shortcut, text, category) and categories.</li>
-        <li>Your settings (on/off, case sensitivity, trigger keys).</li>
-        <li>Usage counts: how many times each snippet was used, and a total per day. These contain no typed text.</li>
-      </ul>
+      <section>
+        <h2>What the extension stores</h2>
+        <ul>
+          <li>Snippets and categories</li>
+          <li>Extension settings</li>
+          <li>Usage statistics (without storing typed text)</li>
+        </ul>
+      </section>
 
-      <h2>What the extension reads</h2>
-      <p>To expand shortcuts, a content script runs on web pages and reads the text just before your cursor <b>in memory only</b>, to check whether it matches one of your shortcuts. That text is not saved, logged or sent anywhere. The extension ignores password fields and fields that look like passwords, one-time codes, PINs or card numbers.</p>
+      <section>
+        <h2>What the extension reads</h2>
+        <p>
+          The extension temporarily checks text near the cursor to detect
+          shortcuts. This data remains in memory only and is never stored or sent.
+        </p>
+      </section>
 
-      <h2>What the extension sends</h2>
-      <p>Nothing leaves your device. The extension makes no network requests and has no servers.</p>
+      <section>
+        <h2>Permissions</h2>
+        <ul>
+          <li><strong>Storage</strong> — Save snippets and settings locally.</li>
+          <li><strong>Website Access</strong> — Enable shortcut expansion on websites.</li>
+        </ul>
+      </section>
 
-      <h2>Permissions</h2>
-      <ul>
-        <li><b>storage</b>: saves your snippets and settings locally.</li>
-        <li><b>Access to all websites (content script)</b>: lets your shortcuts expand in text fields on any site you use. It is not used to read, collect or store page content.</li>
-      </ul>
-
-      <h2>Your control</h2>
-      <p>You can export your snippets as a JSON file at any time. "Clear all data" in Settings deletes everything. Uninstalling the extension removes its stored data from your browser.</p>
-
-      <h2>Children</h2>
-      <p>The extension is not directed at children and collects no personal information.</p>
-
-      <h2>Changes to this policy</h2>
-      <p>If this policy changes, the new version will be included in the extension and the date above will be updated. If a future version ever sends data off your device, this policy will say exactly what is sent and why before that version is released.</p>
-
-      <h2>Contact</h2>
-      <p>Questions about privacy? Email <a href="mailto:prashantkhadkapass@gmail.com">prashantkhadkapass@gmail.com</a>.</p>
-    </article>
+      <section>
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:prashantkhadkapass@gmail.com">
+            prashantkhadkapass@gmail.com
+          </a>
+        </p>
+      </section>
+    </div>
   </div>
 </body>
 </html>

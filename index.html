@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Smart Text Expander</title>
 
-<link rel="icon" type="image/png" href="icon48.png">
+<link rel="icon" type="image/png" sizes="48x48" href="icon48.png">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -23,46 +23,57 @@ body{
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     padding:20px;
 }
 
 .hero{
     text-align:center;
-    padding:80px 20px;
+    padding:60px 20px;
 }
 
 .logo{
-    width:128px;
-    height:128px;
+    width:140px;
+    height:140px;
+    border-radius:32px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(37,99,235,.15);
+}
+
+.badge{
+    display:inline-block;
+    background:#dcfce7;
+    color:#166534;
+    padding:10px 18px;
+    border-radius:999px;
+    font-size:15px;
     margin-bottom:20px;
-    border-radius:24px;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
 .hero h1{
-    font-size:3rem;
+    font-size:4rem;
     color:#2563eb;
-    margin-bottom:15px;
+    margin-bottom:20px;
+    font-weight:700;
 }
 
 .hero p{
-    font-size:1.1rem;
-    max-width:700px;
+    max-width:750px;
     margin:auto;
-    color:#475569;
+    font-size:1.2rem;
     line-height:1.8;
+    color:#475569;
 }
 
 .btn{
     display:inline-block;
-    margin-top:30px;
-    padding:14px 28px;
+    margin-top:35px;
     background:#2563eb;
-    color:#fff;
+    color:white;
     text-decoration:none;
-    border-radius:8px;
+    padding:14px 30px;
+    border-radius:10px;
     font-weight:600;
     transition:.3s;
 }
@@ -72,27 +83,27 @@ body{
 }
 
 .section{
-    padding:60px 20px;
+    padding:70px 20px;
 }
 
 .section-title{
     text-align:center;
+    font-size:2.5rem;
     margin-bottom:40px;
-    font-size:2rem;
     color:#0f172a;
 }
 
 .features{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    gap:25px;
 }
 
 .card{
-    background:#fff;
+    background:white;
+    border-radius:15px;
     padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
 .card h3{
@@ -100,43 +111,47 @@ body{
     margin-bottom:10px;
 }
 
+.card p{
+    line-height:1.7;
+    color:#475569;
+}
+
 .example{
-    background:#fff;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    background:white;
+    padding:35px;
+    border-radius:15px;
     text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
 .code{
+    margin:15px 0;
     background:#f1f5f9;
-    padding:12px;
-    border-radius:6px;
-    margin:10px 0;
+    padding:15px;
+    border-radius:8px;
     font-family:Consolas, monospace;
+    font-size:18px;
+}
+
+.privacy{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    color:#475569;
 }
 
 .footer{
+    border-top:1px solid #e2e8f0;
     text-align:center;
     padding:40px 20px;
     color:#64748b;
-    border-top:1px solid #e2e8f0;
 }
 
 .footer a{
     color:#2563eb;
     text-decoration:none;
-    font-weight:bold;
-}
-
-.badge{
-    display:inline-block;
-    background:#dcfce7;
-    color:#166534;
-    padding:8px 16px;
-    border-radius:30px;
-    font-size:14px;
-    margin-bottom:15px;
+    font-weight:600;
 }
 
 .contact{
@@ -145,16 +160,29 @@ body{
 
 @media(max-width:768px){
 
-    .hero h1{
-        font-size:2.3rem;
-    }
+.hero{
+    padding:40px 15px;
+}
 
-    .logo{
-        width:96px;
-        height:96px;
-    }
+.hero h1{
+    font-size:2.5rem;
+}
+
+.logo{
+    width:110px;
+    height:110px;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.section-title{
+    font-size:2rem;
+}
 
 }
+
 </style>
 </head>
 
@@ -169,7 +197,7 @@ body{
              class="logo">
 
         <div class="badge">
-            ✅ Free & Unlimited
+            ✅ Free & Unlimited 😄
         </div>
 
         <h1>Smart Text Expander</h1>
@@ -177,14 +205,14 @@ body{
         <p>
             Smart Text Expander is a browser extension that replaces short
             shortcuts with longer text automatically. Save time, reduce
-            repetitive typing, and boost productivity when writing emails,
-            messages, forms, and code.
+            repetitive typing, and boost productivity while writing emails,
+            messages, forms and code.
         </p>
 
         <a class="btn"
            href="https://github.com/Prasaint/Smart-Text-Expander"
            target="_blank">
-            View on GitHub
+           View on GitHub
         </a>
 
     </section>
@@ -207,22 +235,21 @@ body{
             <div class="card">
                 <h3>💯 Free Forever</h3>
                 <p>
-                    No subscriptions, premium plans, or usage limits.
+                    No subscriptions, no premium plans and no usage limits.
                 </p>
             </div>
 
             <div class="card">
                 <h3>🔒 Privacy First</h3>
                 <p>
-                    Your snippets remain on your device. No tracking or analytics.
+                    Your snippets stay on your device. No tracking or analytics.
                 </p>
             </div>
 
             <div class="card">
                 <h3>⚡ Productivity Boost</h3>
                 <p>
-                    Ideal for emails, forms, repetitive text, customer support,
-                    and coding workflows.
+                    Perfect for emails, forms, customer support and coding.
                 </p>
             </div>
 
@@ -254,6 +281,21 @@ body{
 
     </section>
 
+    <section class="section">
+
+        <h2 class="section-title">
+            Privacy
+        </h2>
+
+        <p class="privacy">
+            Smart Text Expander stores your snippets locally in your browser.
+            No personal information is collected, transmitted, shared or sold.
+            The extension does not use analytics, tracking technologies,
+            advertisements or external servers.
+        </p>
+
+    </section>
+
     <footer class="footer">
 
         <p>
@@ -268,11 +310,9 @@ body{
         </div>
 
         <p style="margin-top:15px;">
-
             <a href="privacy-policy.html">
                 Privacy Policy
             </a>
-
         </p>
 
     </footer>

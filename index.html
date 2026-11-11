@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Smart Text Expander</title>
-<link rel="icon" href="icon48.png">
+
+<link rel="icon" type="image/png" href="icon48.png">
+
 <style>
 *{
     margin:0;
@@ -27,6 +31,14 @@ body{
 .hero{
     text-align:center;
     padding:80px 20px;
+}
+
+.logo{
+    width:128px;
+    height:128px;
+    margin-bottom:20px;
+    border-radius:24px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
 .hero h1{
@@ -125,99 +137,144 @@ body{
     border-radius:30px;
     font-size:14px;
     margin-bottom:15px;
-} 
-.logo{
-    width:96px;
-    height:96px;
-    margin-bottom:20px;
-    border-radius:20px;
-    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.contact{
+    margin-top:15px;
 }
 
 @media(max-width:768px){
+
     .hero h1{
         font-size:2.3rem;
     }
+
+    .logo{
+        width:96px;
+        height:96px;
+    }
+
 }
 </style>
 </head>
+
 <body>
 
 <div class="container">
 
-   <section class="hero">
+    <section class="hero">
 
-    <img src="icon48.png"
-         alt="Smart Text Expander Logo"
-         class="logo">
+        <img src="icon128.png"
+             alt="Smart Text Expander Logo"
+             class="logo">
 
-    <div class="badge">✅ Free & Unlimited 😄</div>
+        <div class="badge">
+            ✅ Free & Unlimited
+        </div>
 
-    <h1>Smart Text Expander</h1>
+        <h1>Smart Text Expander</h1>
 
-    <p>
-        Smart Text Expander is a browser extension that replaces short
-        shortcuts with longer text automatically. Save time, reduce
-        repetitive typing, and boost productivity when writing emails,
-        messages, forms, and code.
-    </p>
+        <p>
+            Smart Text Expander is a browser extension that replaces short
+            shortcuts with longer text automatically. Save time, reduce
+            repetitive typing, and boost productivity when writing emails,
+            messages, forms, and code.
+        </p>
 
-</section>
+        <a class="btn"
+           href="https://github.com/Prasaint/Smart-Text-Expander"
+           target="_blank">
+            View on GitHub
+        </a>
+
+    </section>
 
     <section class="section">
-        <h2 class="section-title">Features</h2>
+
+        <h2 class="section-title">
+            Features
+        </h2>
 
         <div class="features">
 
             <div class="card">
                 <h3>🚀 Instant Expansion</h3>
-                <p>Replace small shortcuts with full text automatically while typing.</p>
+                <p>
+                    Replace shortcuts with complete text instantly while typing.
+                </p>
             </div>
 
             <div class="card">
                 <h3>💯 Free Forever</h3>
-                <p>No subscriptions, no limits, and no hidden charges.</p>
+                <p>
+                    No subscriptions, premium plans, or usage limits.
+                </p>
             </div>
 
             <div class="card">
                 <h3>🔒 Privacy First</h3>
-                <p>Your snippets stay on your device. No tracking, analytics, or data collection.</p>
+                <p>
+                    Your snippets remain on your device. No tracking or analytics.
+                </p>
             </div>
 
             <div class="card">
                 <h3>⚡ Productivity Boost</h3>
-                <p>Perfect for emails, customer support, forms, repetitive text, and coding.</p>
+                <p>
+                    Ideal for emails, forms, repetitive text, customer support,
+                    and coding workflows.
+                </p>
             </div>
 
         </div>
+
     </section>
 
     <section class="section">
-        <h2 class="section-title">Example</h2>
+
+        <h2 class="section-title">
+            Example
+        </h2>
 
         <div class="example">
 
             <p>Type:</p>
-            <div class="code">/addr</div>
+
+            <div class="code">
+                /addr
+            </div>
 
             <p>Automatically becomes:</p>
+
             <div class="code">
                 Kathmandu, Nepal
             </div>
 
         </div>
+
     </section>
 
     <footer class="footer">
+
         <p>
             Smart Text Expander © 2026
         </p>
 
-        <p style="margin-top:10px;">
-            <a href="https://prasaint.github.io/Smart-Text-Expander/privacy-policy.html" target="_blank">
+        <div class="contact">
+            Contact:
+            <a href="mailto:prashantkhadkapass@gmail.com">
+                prashantkhadkapass@gmail.com
+            </a>
+        </div>
+
+        <p style="margin-top:15px;">
+
+            <a href="privacy-policy.html">
                 Privacy Policy
             </a>
+
         </p>
+
     </footer>
 
 </div>
